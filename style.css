@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300&display=swap');
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 269px;
+    padding: 15px;
+    min-height: 430px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.column1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.column2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.column3 {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.cars {
+    margin: 20px 0 0;
+}
+
+.content {
+    padding: 10px;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.btn {
+    margin: 90px 0 30px;
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    background: hsl(0, 0%, 95%);
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    transition: 0.4s ease-in-out;
+}
+
+.btn .btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn .btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn .btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media(max-width: 920px) and (min-width: 300px) {
+    body {
+        height: 160vh;
+    }
+
+    main {
+        margin: 20px 0 0;
+        transform: translate(0%, 25%);
+    }
+
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 300px;
+        padding: 5px 19px;
+        min-height: 360px;
+    }
+
+    .cars {
+        margin: 20px 10px 0;
+    }
+
+    .column1 {
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0;
+    }
+
+    .column3 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 7px;
+    }
+
+    .btn {
+        margin: 20px 0;
+        padding: 13px 30px;
+    }
+
+    h2 {
+        margin: 10px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+}
