@@ -33,7 +33,7 @@ main {
 
 .box {
     width: 269px;
-    padding: 15px;
+    padding: 1rem;
     min-height: 430px;
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
@@ -54,7 +54,9 @@ main {
     border-bottom-right-radius: 7px;
 }
 
-.cars {
+.luxury-icon,
+.suvs-icon,
+.sedans-icon {
     margin: 20px 0 0;
 }
 
@@ -65,15 +67,15 @@ main {
 h2 {
     color: hsl(0, 0%, 95%);
     text-transform: uppercase;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: bold;
     margin: 20px 0;
 }
 
 p {
     color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
     line-height: 25px;
 }
 
@@ -109,12 +111,16 @@ p {
     color: hsl(179, 100%, 13%);
 }
 
-.attribution {
+footer{
+ margin: 0 0 2rem;
+}
+
+footer .attribution {
     font-size: 11px;
     text-align: center;
 }
 
-.attribution a {
+footer .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
@@ -127,7 +133,7 @@ p {
 
     main {
         margin: 20px 0 0;
-        transform: translate(0%, 25%);
+        padding: 30rem 0 0;
     }
 
     .box-container {
@@ -143,7 +149,9 @@ p {
         min-height: 360px;
     }
 
-    .cars {
+    .luxury-icon,
+    .suvs-icon,
+    .sedans-icon {
         margin: 20px 10px 0;
     }
 
@@ -168,6 +176,10 @@ p {
 
     p {
         margin: 10px 0;
+    }
+    footer{
+       margin: 7rem 0 0;
+       padding: 20rem 0 0;
     }
 
 }
